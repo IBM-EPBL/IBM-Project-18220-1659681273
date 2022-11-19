@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chronic Kidney Disease</title>
+</head>
+<body>
+    <link rel="stylesheet" href="textstyle.css">
+    <div style="color:black;" class="container">
+        <h2>Chronic Kidney Disease Detection</h2>
+    </div>
+    <div style="color:black;" class="ml-container">
+        <form action="{{ url_for('index') }}" method="GET">
+
+            <br>
+            <button id="sub" type="Detect">Detect</button>
+            <br>
+            <br>
+        <b>    <h3>Overview</h3>
+            <p class="lead"><ul>
+                <li>The kidneys filter waste and excess fluid from the blood. As kidneys fail, waste builds up.</li><br/>
+                <li>Symptoms develop slowly and aren't specific to the disease. Some people have no symptoms at all and are diagnosed by a lab test.</li><br/>
+                <li>Medication helps manage symptoms. In later stages, filtering the blood with a machine (dialysis) or a transplant may be required.</li></ul></p>
+            <br>
+            <h3>Symptoms</h3>
+            <p><ol><h1>Whole body:</h1> <li>fatigue,</li> <li>high blood pressure,</li> <li>loss of appetite,</li> <li>malaise, or water-electrolyte imbalance</li> </ol>
+            <ol><h1>Also common:</h1>
+                <li>kidney damage,</li> 
+                <li>abnormal heart rhythm,</li>
+                <li>failure to thrive,</li>
+                <li>fluid in the lungs,</li>
+                <li>insufficient urine production, 
+                <li>itching, kidney failure,</li>
+                <li> severe unintentional weight loss, or swelling.</li>
+            </ol></p>
+            
+                <br>
+            <h3>Treatment</h3>
+            <p>Medication helps manage symptoms. In later stages, filtering the blood with a machine (dialysis) or a transplant may be required.</p>
+            <br>
+            <br>
+            <p class='footer-description'>©IBM PROJECT</p>
+</b>
+        </form>
+    </div>
+<style>
+
+/* Background Image */
+body
+{
+background-image:url("static/ckd.jpg");
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+/* Color */
+body{
+	font-family: Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Heading Font */
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: black;
+    text-align: center;
+	font-family: 'Colonna MT', cursive;
+	font-size: 100px;
+	font-weight: normal;
+}
+
+/* Detect Button */
+#sub {
+            width: 200px;
+            height: 40px;
+            font-family: "Berlin Sans Fb";
+            font-size: 20px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            background-image: url("https://static.videezy.com/system/resources/thumbnails/000/051/538/original/Medical-Health-Background.jpg");
+            background-position: center;
+            border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+
+        }
+
+
+
+
+
+
+</style>
+
+</body>
+</html>

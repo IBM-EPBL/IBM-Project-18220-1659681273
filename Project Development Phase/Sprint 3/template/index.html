@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chronic Kidney Disease Model</title>
+
+</head>
+<body>
+    <div style="color:black;" class="container">
+        <h2 class='container-heading'><span class="heading_font">Chronic Kidney Disease Detection</span></h2>
+    </div>
+
+    <div style="color:black;" class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <br>
+            <h3>Blood Urea</h3> 
+                <input id="first" name="bu" placeholder="value" required="required">
+            <br>
+            <h3>Blood Glucose Random</h3>
+                <input id="second" name="bgr" placeholder="value" required="required">
+            <br>
+            <h3>Coronary Artery Disease</h3>
+                <input id="third" name="cad" placeholder="Yes= 1, No= 0" required="required">
+            <br>
+            <h3>Anemia</h3>
+                <input id="fourth" name="ane" placeholder="Yes= 1, No=0" required="required">
+            <br>
+            <h3>Pus Cell</h3>
+                <input id="fifth" name="pc" placeholder="Abnormal= 1, Normal= 0" required="required">
+            <br>
+            <h3>Red Blood Cells</h3>
+                <input id="sixth" name="rbc" placeholder="Abnormal= 1, Normal= 0" required="required">
+            <br>
+            <h3>DiabetesMellitus</h3>
+                <input id="seventh" name="dm" placeholder="Yes= 1, No= 0" required="required">
+            <br>
+            <h3>Pedal Edema</h3>
+                <input id="eight" name="pe" placeholder="Yes= 1, No= 0" required="required">
+            <br>
+            <br>
+            <br>
+            <button id="sub" type="predict ">Predict</button>
+            <br>
+            <br>
+            <br>
+            <p class='footer-description'>©IBM PROJECT</p>
+
+        </form>
+    </div>
+
+
+
+
+<style>
+
+/* Background Image */
+body
+{
+background-image:url("static/CKD.jpg");
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+/* Color */
+body{
+	font-family: "Bell MT";
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Heading Font */
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: black;
+	font-family: 'Colonna MT', cursive;
+	font-size: 100px;
+	font-weight: normal;
+    text-align: center;
+}
+
+
+
+/* Box */
+        #first {
+            border-radius: 0px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second {
+            border-radius: 0px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third {
+            border-radius: 0px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fourth {
+            border-radius: 0px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fifth {
+            border-radius: 0px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sixth {
+            border-radius: 0px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #seventh {
+            border-radius: 0px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #eight {
+            border-radius: 0px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+/* Submit Button */
+#sub {
+            width: 100px;
+            height: 40px;
+            font-family: "Berlin Sans Fb";
+            font-size: 20px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            background-image: url("https://static.videezy.com/system/resources/thumbnails/000/051/538/original/Medical-Health-Background.jpg");
+            background-position: center;
+            border-color: red;
+}
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</style>
+
+
+</body>
+
+</html>
+
+

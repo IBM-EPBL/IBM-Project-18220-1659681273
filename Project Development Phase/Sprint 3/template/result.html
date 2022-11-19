@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result of Chronic kidney disease</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="textstyle.css">
+
+    <div style="color:black;" class="container">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2 class='container-heading'><span class="heading_font">Chronic Kidney Disease Dectection</span></h2>
+        <!-- Result -->
+		<div style="color:black;" class="results">
+			{% if prediction==0 %}
+                <div class="box">       
+                    <img src="static/kidclip.png" alt="" width="250" height="150" id="hp"/>
+                    <div class="content">
+                    <center><h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(42, 4, 255) ;"><u>Result</u></h2></center>
+                    <h3>Result : <i style="color: red;font-family: 'Courier New', Courier, monospace;">Positive</i></h3> 
+                    <p style="font-family:cursive ;">The patient <b>got</b> the Chronic kidney disease 😞 </p><br/>
+                    <p style="font-family:fantasy ;">Take care of health </p>
+                
+                
+			{% elif prediction==1 %}
+                <div class="box">        <img src="static/kidclip.png" alt="" width="250" height="150" id="hp"/>
+
+                    <div class="content">
+                    <center><h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: rgb(42, 4, 255) ;"><u>Result</u></h2></center>
+                    <h3>Result : <i style="color: rgb(41, 128, 1);font-family: 'Courier New', Courier, monospace;">Negative</i></h3> 
+                    <p style="font-family:cursive ;">The patient <b>have no</b> the Chronic kidney disease 😀 </p><br/>
+                    <p style="font-family:fantasy ;">🌹Take care of health ✌️ </p>
+                
+            {% endif %}
+		</div>
+        </form>
+
+    </div>
+    <div>
+            <br><br> <br><br><br><br><br><br><br><br>
+
+            <p class='footer-description'>©IBM PROJECT</p>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

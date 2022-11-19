@@ -1,0 +1,69 @@
+body{
+    background-image: url("static/docpat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    position:;
+    width:1200px;
+    height:300px;
+    margin: auto;
+    
+  width: 25%;
+}
+.container .box{
+    
+    position:absolute;
+    width:calc(400px - 30px);
+    height:calc(300px- 30px);
+    background: rgb(186, 218, 7);
+    float:left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 9px;
+    border-color:lightcyan;
+    border-style:groove;
+    border-radius: 60px;
+}
+.container.box.content{
+    position:absolute;
+    top: 100%;
+    height: calc(100% -100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.container.box.content h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 30px;
+}
+.container.box.content p{
+    margin:0;
+    padding: 0;
+    color: rgb(7, 221, 193)
+}
+.container.box.content b{
+    margin: 0;
+    color: rgb(180, 4, 4);
+}
+.hp  {
+    float: right;    
+     margin: 0 0 0 5px;
+    }
+
+    .on-dark {
+        background: #222;
+        
+      }
+      .border-gradient {
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 5px;
+      }
+      .border-gradient-purple {
+        border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+      }
